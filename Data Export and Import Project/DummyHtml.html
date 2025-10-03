@@ -1,0 +1,39 @@
+<!doctype>
+<html>
+<head>
+	<style>	
+    	*{
+        	text-align:center;
+            background-color:skyblue;
+            color:white;
+        }
+        #btn{
+        	border-radius:5px;
+            background-color:white;
+            color:skyblue;
+        }
+    </style>
+</head>
+<body>
+	<h1 id="text">Hello Machi!</h1>
+    <button id="btn">Hide me</button>
+</body>
+<script>
+	const text=document.getElementById("text")
+	const ele=document.getElementById("btn")
+    let isVisble=true;
+	function fun(){
+    	if(isVisble){
+        	text.style.display="block"
+            btn.textContact="Show me"
+            isVisble=false;
+        }
+        else{
+        	text.style.display="none"
+            btn.textContact="Hide me"
+            isVisble=true;
+        }
+    }
+    ele.addEventListener("click", fun());
+</script>
+</html>
